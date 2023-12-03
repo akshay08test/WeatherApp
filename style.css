@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-size: 62.5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    /* width: 90%; */
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    padding: 4rem 3.5rem;
+    border-radius: 1.5rem;
+    color: #fff;
+    margin: 0 1rem;
+}
+
+.search__box {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.search--input {
+    border: none;
+    font-size: 1.4rem;
+    /* font-weight: 500; */
+    border-radius: 2rem;
+    margin-right: 1rem;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+    color: #555;
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.192);
+}
+
+.search--btn {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.192);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search--btn svg {
+    height: 1.8rem;
+    width: 1.8rem;
+    fill: #555;
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.weather--img {
+    height: 7rem;
+}
+
+.temp {
+    font-size: 3.5rem;
+}
+
+.city--name {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.details {
+    margin-top: 2rem;
+    display: flex;
+    gap: 5rem;
+    font-size: 1.1rem;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    /* gap: 1rem; */
+}
+
+.col:last-of-type {
+    gap: 6px;
+}
+
+.details img {
+    width: 4rem;
+}
+
+
+
+
+
+
+@media (max-width: 470px) {
+    .card {
+        padding: 4rem 2.5rem;
+    }
+
+    .search--input {
+        width: 14rem;
+    }
+
+    .weather--img {
+        height: 5rem;
+    }
+
+    .temp {
+        font-size: 2.5rem;
+    }
+
+    .city--name {
+        font-size: 1.5rem;
+    }
+
+    .details {
+        gap: 3rem;
+        font-size: 1rem;
+    }
+}
